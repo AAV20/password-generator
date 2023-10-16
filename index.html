@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password-generator</h1>
+
+    <div class="password-box">
+        <input type="text" class="pass-value" value="45$%#1" readonly>
+        <i class="fa fa-files-o" aria-hidden="true" id="copy-btn"></i>
+    </div>
+
+    <div class="indicator-box">
+        <div></div>
+        <div class="indicator"></div>
+    </div>
+
+    <h2 class="pass-settings-title">Password Settings</h2>
+    <div class="password-length-box">
+        <span class="pass-length">Password Length</span>
+        <span class="password-length-value">6</span>
+        <input type="range" class="pass-slider" min="6" max="32" value="6">
+    </div>
+
+    <div class="settings">
+        <div class="lowercase">
+            <input type="checkbox" id="lowercase" checked disabled>
+            <span>lowercase (a-z)</span>
+        </div>
+        <div class="uppercase">
+            <input type="checkbox" id="uppercase">
+            <span>Uppercase (A-Z)</span>
+        </div>
+        <div class="numbers">
+            <input type="checkbox" id="numbers">
+            <span>Numbers (0-9)</span>
+        </div>
+        <div class="simbols">
+            <input type="checkbox" id="simbols">
+            <span>Simbols (!@#$%-@)</span>
+        </div>
+        <button class="generate-pass">Genereate Password</button>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
